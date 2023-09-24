@@ -27,11 +27,11 @@ from wordcloud import WordCloud,STOPWORDS
 from transformers import pipeline, AutoModelForSequenceClassification, AutoTokenizer
 
 # Load secrets from the TOML file
-secrets = toml.load("secrets.toml")
+#secrets = toml.load("secrets.toml")
 
 # Initialize a global variable for users
 users = None
-bearer_token= secrets["twitter"]["bearer_token"]
+bearer_token= st.secrets["twitter"]["bearer_token"]
 # Authenticate with Twitter API v2 (Replace with your own bearer token)
 client = tweepy.Client(bearer_token=bearer_token)
 
