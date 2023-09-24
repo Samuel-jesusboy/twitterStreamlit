@@ -1,0 +1,4 @@
+#ignore .toml
+*.toml
+__pycache__
+kaztwitter
